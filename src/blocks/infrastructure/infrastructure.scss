@@ -1,0 +1,103 @@
+.infrastructure {
+  margin-top: 112px;
+}
+
+.benefit-list {
+  display: flex;
+  justify-content: space-between;
+
+  &__section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 49.8%;
+  }
+
+  &__section--column {
+    flex-direction: column;
+  }
+
+  &__sub-section-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__sub-section-right {
+    width: 49.7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__sub-section-left {
+    width: 49.7%;
+  }
+}
+
+.benefit {
+  overflow: hidden;
+  position: relative;
+
+  &--sm {
+    height: 300px;
+  }
+
+  &--nm {
+    height: 300px;
+  }
+
+  &--lg {
+    max-height: 607px;
+    height: 100%;
+  }
+
+  &--w50 {
+    width: 49.5%;
+  }
+
+  &--w100 {
+    width: 100%;
+  }
+
+  &--mb7 {
+    margin-bottom: 1%;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 395px;
+    position: absolute;
+    left: 0px;
+    bottom: 30px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    color: #fff;
+    padding: 0 20px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+/* 
+
+лефт
+1. горизонт блок на 100%
+2. дети ниже по 50
+
+правый
+1.разбиваем секцию на 50 и 50
+2.в левую вставляем длинный блок
+3. правые на 100 упадут другл под друга
+
+вывод:
+когда макет будет сжиматься, то лефт и правый через медиа будут 100%
+
+не забывайте про отступы: это можнолл сделать допустим уменьшив ширину
+
+*/

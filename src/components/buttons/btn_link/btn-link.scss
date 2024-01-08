@@ -1,0 +1,26 @@
+.btn--link {
+  background-color: $PrimaryBlue100;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-ico--phone {
+  display: inline-block;
+  width: 23px;
+  height: 25px;
+  background-image: url("../../images/phone.svg");
+}
+
+.telephone-ico {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .telephone-text {
+    display: none;
+  }
+  .telephone-ico {
+    display: block;
+  }
+}

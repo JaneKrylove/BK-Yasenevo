@@ -1,0 +1,23 @@
+<header class="header">
+  <div class="container header__wrapper">
+    @@include('src/components/logo/logo.html', {"mod": "logo--header"})
+    <nav class="nav-wrapper">
+      <ul class="nav">
+        <li class="nav__item"><a class="nav__link nav__link--active" href="#">Главная</a></li>
+        <li class="nav__item"><a class="nav__link" href="location.html">Расположение</a></li>
+        <li class="nav__item"><a class="nav__link" href="plans.html">Планировки</a></li>
+      </ul>
+    </nav>
+    @@include('src/components/buttons/btn_link/btn-link.html')
+  </div>
+</header>
+
+<!-- 
+
+БЭМ
+Б- блок
+Э - элемент
+М - модификатор
+
+
+ -->

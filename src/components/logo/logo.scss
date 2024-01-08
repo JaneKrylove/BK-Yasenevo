@@ -1,0 +1,28 @@
+.logo {
+  font-weight: 700;
+  color: #000;
+
+  &--header {
+    font-size: 32px;
+  }
+
+  &--footer {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .logo {
+    &--header {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .logo {
+    &--footer {
+      font-size: 24px;
+    }
+  }
+}

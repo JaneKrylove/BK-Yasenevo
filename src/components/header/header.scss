@@ -1,0 +1,38 @@
+.header {
+  padding: 40px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  &__link--active {
+    font-weight: 600;
+  }
+  &__item {
+    margin: 0 15px;
+    list-style: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .nav {
+    &__item:first-child {
+      display: none;
+    }
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 720px) {
+  .nav {
+    display: none;
+  }
+}

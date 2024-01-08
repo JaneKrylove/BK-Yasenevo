@@ -1,0 +1,32 @@
+.plans-parametrs {
+  background: $PrimaryBlue100;
+  width: 252px;
+  height: 208px;
+  position: absolute;
+  color: #fff;
+  padding: 52px 24px 31px 31px;
+  right: 181px;
+  top: 297px;
+  margin-right: 341px;
+
+  & :last-child {
+    margin-bottom: 0;
+  }
+
+  &__item {
+    text-align: center;
+    margin-bottom: 63px;
+  }
+
+  &__value {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+
+  &__description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 160%;
+  }
+}

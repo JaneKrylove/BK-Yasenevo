@@ -1,0 +1,19 @@
+.btn {
+  cursor: pointer;
+  padding: 14px 32px;
+  transition: opacity 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 720px) {
+.btn--callback {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+  
+
+}

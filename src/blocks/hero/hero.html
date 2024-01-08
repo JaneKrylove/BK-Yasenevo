@@ -1,0 +1,32 @@
+<section class="hero">
+  <div class="container">
+    <div class="title-wrapper">
+      <h1 class="title @@mod">@@title</h1>
+    </div>
+    <div class="hero__img-wrapper">
+      <div class="parametrs @@parametrsTopMod">
+        @@if (parametr1 === 'true') {
+        <div class="parametrs__item">
+          <span class="parametrs__value">1 мин</span>
+          <span class="parametrs__description">пешком от метро</span>
+        </div>
+        } @@if (parametr2 === 'true') {
+        <div class="parametrs__item">
+          <span class="parametrs__value">от 60 м²</span>
+          <span class="parametrs__description">помещения под офисы</span>
+        </div>
+        } @@if (parametr3 === 'true') {
+        <div class="parametrs__item">
+          <span class="parametrs__value">2024 г.</span>
+          <span class="parametrs__description">первая очередь</span>
+        </div>
+        }
+      </div>
+      <img class="hero__img" src="images/@@img" alt="@@title" />
+    </div>
+    
+    @@if (parametr4 === 'true') { @@include('src/components/description/description.html', {"mod": "description-wrapper--left", "text": "Бизнес-квартал «Ясенево» расположен на пересечении ключевых маршрутов локации – в 1 мин. от действующей станции метро и автотрассы СБВ (дублёр МКАД) с удобным съездом на парковку. Здесь проходит единственный путь от жилых районов к метро, что обеспечивает высокую активность пешеходного трафика."})}
+    @@if (parametr5 === 'true') { @@include('src/components/description/description.html', {"mod": "description-wrapper--right", "text": "Vita-офисы в бизнес-квартале – новые эффективные рабочие пространства на основе идеи витальности (жизненной силы), эстетики и функциональности. Создают благоприятное воздействие на эмоциональное состояние и работоспособность сотрудников, развитие бизнеса. Это единая цифровая среда, инфраструктура для резидентов и уникальные шеринг-помещения: комната для тимбилдинга, лекторий, кабинет врача, йога-класс и многое другое."})}
+    @@if (parametr6 === 'true') { @@include('src/components/description/description.html', {"mod": "description-wrapper--left", "text": "Vita-офисы в бизнес-квартале – новые эффективные рабочие пространства на основе идеи витальности (жизненной силы), эстетики и функциональности. Создают благоприятное воздействие на эмоциональное состояние и работоспособность сотрудников, развитие бизнеса. Это единая цифровая среда, инфраструктура для резидентов и уникальные шеринг-помещения: комната для тимбилдинга, лекторий, кабинет врача, йога-класс и многое другое."})}
+  </div>
+</section>

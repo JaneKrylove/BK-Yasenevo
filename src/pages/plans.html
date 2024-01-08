@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>БК Ясенево</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    @@include('src/components/header/header.html')
+    @@include('src/blocks/hero/hero.html', { "title": "Выбирайте планировку для любого бизнеса", "mod": "title--sm", "img": "office_plans.jpg", "parametr1": 'false', "parametr2": 'true', "parametr3": 'false', "parametrsTopMod": "parametrs--top-sm", "parametr4": 'false', "parametr5": 'false', "parametr6": 'true'})
+    
+    @@include('src/components/plans_variants/variants.html')
+    <img class="image__main" src="images/buildings3.png" alt="Prokshino" />
+    
+    @@include('src/blocks/details/details.html')
+    @@include('src/components/footer/footer.html')
+
+  </body>
+</html>
